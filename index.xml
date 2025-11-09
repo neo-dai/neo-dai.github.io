@@ -1,32 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>myblog</title><link>https://neo-dai.github.io/</link><description>Recent content on myblog</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 09 Nov 2025 17:45:35 +0800</lastBuildDate><atom:link href="https://neo-dai.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>使用GitHub Action 自动化部署blog</title><link>https://neo-dai.github.io/posts/%E4%BD%BF%E7%94%A8github-action-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2blog/</link><pubDate>Sun, 09 Nov 2025 17:45:35 +0800</pubDate><guid>https://neo-dai.github.io/posts/%E4%BD%BF%E7%94%A8github-action-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2blog/</guid><description>&lt;p&gt;在日常写博客时，如果每次都需要本地执行 &lt;code&gt;hugo&lt;/code&gt; 构建命令、进入 public 目录、再手动 &lt;code&gt;git push&lt;/code&gt;，效率低且易出错。现代开发讲究 CI/CD（持续集成/持续部署），其实我们能完全自动化博客发布，让你专注写 Markdown，其余交给 GitHub Actions 实现自动部署。&lt;/p&gt;
-&lt;h2 id="一整体流程说明"&gt;一、整体流程说明&lt;/h2&gt;
-&lt;p&gt;自动化部署 Hugo 博客的基本流程如下：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;博客源码仓库&lt;/strong&gt;：创建一个私有仓库（如 &lt;code&gt;my-blog-source&lt;/code&gt;），存放你的 Markdown 博文和配置文件（&lt;code&gt;content/&lt;/code&gt;、&lt;code&gt;config.toml&lt;/code&gt; 等）。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;部署仓库&lt;/strong&gt;：使用另一个公开仓库（如 &lt;code&gt;neo-dai/neo-dai.github.io&lt;/code&gt;），用于托管 &lt;code&gt;public&lt;/code&gt; 生成的静态网页，这就是你 GitHub Pages 访问的网址。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;GitHub Actions&lt;/strong&gt;：在源码仓库（&lt;code&gt;my-blog-source&lt;/code&gt;）配置自动化 CI/CD 工作流（&lt;code&gt;.github/workflows/deploy.yml&lt;/code&gt;）。今后你只需要将 Markdown 推送到此仓库，其它步骤全自动完成。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="二详细步骤"&gt;二、详细步骤&lt;/h2&gt;
-&lt;h3 id="1-源码与部署仓库区分"&gt;1. 源码与部署仓库区分&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;my-blog-source&lt;/code&gt;（私有）：只存 Hugo 博客源码、markdown、主题和 config。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;neo-dai.github.io&lt;/code&gt;（公开）：只存静态页面，供公开访问。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;为什么这样设计？&lt;br&gt;
-Hugo 主题、草稿、源文件等可以私密保存，博客源码独立于真正发布目录，也更易维护。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id="2-生成-ssh-部署密钥"&gt;2. 生成 SSH 部署密钥&lt;/h3&gt;
-&lt;p&gt;自动部署需要 GitHub Actions 写入你的部署仓库。推荐在本地生成 SSH 部署密钥，并配置到仓库（详见下方说明）。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;本地或用脚本生成一对密钥：
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;ssh-keygen -t rsa -b &lt;span style="color:#ae81ff"&gt;4096&lt;/span&gt; -C &lt;span style="color:#e6db74"&gt;&amp;#34;hugo-deploy@github-actions&amp;#34;&lt;/span&gt; -f ~/.ssh/hugo_deploy_key
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;**将公钥（.pub）**添加到 &lt;code&gt;neo-dai.github.io&lt;/code&gt; 仓库的 Deploy Keys，并勾选 write。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;将私钥&lt;/strong&gt;内容配置到 &lt;code&gt;my-blog-source&lt;/code&gt; 的 Secrets，名称如 &lt;code&gt;ACTIONS_DEPLOY_KEY&lt;/code&gt;。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;（密钥配置更详细操作可见文末附录。）&lt;/p&gt;</description></item><item><title>使用Hugo+GitHub Page快速搭建个人博客</title><link>https://neo-dai.github.io/posts/%E4%BD%BF%E7%94%A8hugo+github-page%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link><pubDate>Sun, 09 Nov 2025 17:22:55 +0800</pubDate><guid>https://neo-dai.github.io/posts/%E4%BD%BF%E7%94%A8hugo+github-page%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p&gt;在本教程中，你将学会如何利用 Hugo（一个高效的静态网站生成器）和 GitHub Pages 免费快速搭建属于你自己的个人博客。全流程覆盖从环境安装、写作、主题美化，到部署上线，适合对前端不熟悉、但愿意动手实践的你！&lt;/p&gt;
+&lt;h2 id="前后流程对比"&gt;前后流程对比&lt;/h2&gt;
+&lt;p&gt;在进入详细流程前，先来看博客部署的前后对比流程图：&lt;/p&gt;
+&lt;h3 id="-传统手动部署流程"&gt;🕹️ 传统手动部署流程&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;graph TD
+ A[写 Markdown] --&amp;gt; B[本地 hugo 构建]
+ B --&amp;gt; C[进入 public 目录]
+ C --&amp;gt; D[git add/commit/push 到 pages 仓库]
+ D --&amp;gt; E[博客发布上线]
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="-自动化部署cicd流程"&gt;🚀 自动化部署（CI/CD）流程&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;graph TD
+ A[写 Markdown] --&amp;gt; B[git push 到源码仓库]
+ B --&amp;gt; C[触发 GitHub Actions 自动构建]
+ C --&amp;gt; D[Actions 自动生成静态网页]
+ D --&amp;gt; E[Actions 自动推送到 pages 仓库]
+ E --&amp;gt; F[博客发布上线]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;可以看到，自动化部署后，你只需要写好 Markdown 并 &lt;code&gt;git push&lt;/code&gt;，其它琐事全部交给自动流水线，极大提高效率和安全性。&lt;/p&gt;</description></item><item><title>使用Hugo+GitHub Page快速搭建个人博客</title><link>https://neo-dai.github.io/posts/%E4%BD%BF%E7%94%A8hugo+github-page%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link><pubDate>Sun, 09 Nov 2025 17:22:55 +0800</pubDate><guid>https://neo-dai.github.io/posts/%E4%BD%BF%E7%94%A8hugo+github-page%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p&gt;在本教程中，你将学会如何利用 Hugo（一个高效的静态网站生成器）和 GitHub Pages 免费快速搭建属于你自己的个人博客。全流程覆盖从环境安装、写作、主题美化，到部署上线，适合对前端不熟悉、但愿意动手实践的你！&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="为什么选择-hugo--github-pages"&gt;为什么选择 Hugo + GitHub Pages？&lt;/h2&gt;
 &lt;ul&gt;

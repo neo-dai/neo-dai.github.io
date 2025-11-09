@@ -1,48 +1,38 @@
-<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>使用GitHub Action 自动化部署blog | myblog</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content='在日常写博客时，如果每次都需要本地执行 hugo 构建命令、进入 public 目录、再手动 git push，效率低且易出错。现代开发讲究 CI/CD（持续集成/持续部署），其实我们能完全自动化博客发布，让你专注写 Markdown，其余交给 GitHub Actions 实现自动部署。
-一、整体流程说明
-自动化部署 Hugo 博客的基本流程如下：
-
-博客源码仓库：创建一个私有仓库（如 my-blog-source），存放你的 Markdown 博文和配置文件（content/、config.toml 等）。
-部署仓库：使用另一个公开仓库（如 neo-dai/neo-dai.github.io），用于托管 public 生成的静态网页，这就是你 GitHub Pages 访问的网址。
-GitHub Actions：在源码仓库（my-blog-source）配置自动化 CI/CD 工作流（.github/workflows/deploy.yml）。今后你只需要将 Markdown 推送到此仓库，其它步骤全自动完成。
-
-二、详细步骤
-1. 源码与部署仓库区分
-
-my-blog-source（私有）：只存 Hugo 博客源码、markdown、主题和 config。
-neo-dai.github.io（公开）：只存静态页面，供公开访问。
-
-
-为什么这样设计？
-Hugo 主题、草稿、源文件等可以私密保存，博客源码独立于真正发布目录，也更易维护。
-
-2. 生成 SSH 部署密钥
-自动部署需要 GitHub Actions 写入你的部署仓库。推荐在本地生成 SSH 部署密钥，并配置到仓库（详见下方说明）。
-
-本地或用脚本生成一对密钥：
-ssh-keygen -t rsa -b 4096 -C "hugo-deploy@github-actions" -f ~/.ssh/hugo_deploy_key
-
-**将公钥（.pub）**添加到 neo-dai.github.io 仓库的 Deploy Keys，并勾选 write。
-将私钥内容配置到 my-blog-source 的 Secrets，名称如 ACTIONS_DEPLOY_KEY。
-
-
-（密钥配置更详细操作可见文末附录。）'><meta name=generator content="Hugo 0.152.2"><meta name=robots content="index, follow"><meta name=author content="neo"><link rel=stylesheet href=/ananke/css/main.min.efe4d852f731d5d1fbb87718387202a97aafd768cdcdaed0662bbe6982e91824.css><link rel=canonical href=https://neo-dai.github.io/posts/%E4%BD%BF%E7%94%A8github-action-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2blog/><meta property="og:url" content="https://neo-dai.github.io/posts/%E4%BD%BF%E7%94%A8github-action-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2blog/"><meta property="og:site_name" content="myblog"><meta property="og:title" content="使用GitHub Action 自动化部署blog"><meta property="og:description" content='在日常写博客时，如果每次都需要本地执行 hugo 构建命令、进入 public 目录、再手动 git push，效率低且易出错。现代开发讲究 CI/CD（持续集成/持续部署），其实我们能完全自动化博客发布，让你专注写 Markdown，其余交给 GitHub Actions 实现自动部署。
-一、整体流程说明 自动化部署 Hugo 博客的基本流程如下：
-博客源码仓库：创建一个私有仓库（如 my-blog-source），存放你的 Markdown 博文和配置文件（content/、config.toml 等）。 部署仓库：使用另一个公开仓库（如 neo-dai/neo-dai.github.io），用于托管 public 生成的静态网页，这就是你 GitHub Pages 访问的网址。 GitHub Actions：在源码仓库（my-blog-source）配置自动化 CI/CD 工作流（.github/workflows/deploy.yml）。今后你只需要将 Markdown 推送到此仓库，其它步骤全自动完成。 二、详细步骤 1. 源码与部署仓库区分 my-blog-source（私有）：只存 Hugo 博客源码、markdown、主题和 config。 neo-dai.github.io（公开）：只存静态页面，供公开访问。 为什么这样设计？
-Hugo 主题、草稿、源文件等可以私密保存，博客源码独立于真正发布目录，也更易维护。
-2. 生成 SSH 部署密钥 自动部署需要 GitHub Actions 写入你的部署仓库。推荐在本地生成 SSH 部署密钥，并配置到仓库（详见下方说明）。
-本地或用脚本生成一对密钥： ssh-keygen -t rsa -b 4096 -C "hugo-deploy@github-actions" -f ~/.ssh/hugo_deploy_key **将公钥（.pub）**添加到 neo-dai.github.io 仓库的 Deploy Keys，并勾选 write。 将私钥内容配置到 my-blog-source 的 Secrets，名称如 ACTIONS_DEPLOY_KEY。 （密钥配置更详细操作可见文末附录。）'><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-11-09T17:45:35+08:00"><meta property="article:modified_time" content="2025-11-09T17:45:35+08:00"><meta itemprop=name content="使用GitHub Action 自动化部署blog"><meta itemprop=description content='在日常写博客时，如果每次都需要本地执行 hugo 构建命令、进入 public 目录、再手动 git push，效率低且易出错。现代开发讲究 CI/CD（持续集成/持续部署），其实我们能完全自动化博客发布，让你专注写 Markdown，其余交给 GitHub Actions 实现自动部署。
-一、整体流程说明 自动化部署 Hugo 博客的基本流程如下：
-博客源码仓库：创建一个私有仓库（如 my-blog-source），存放你的 Markdown 博文和配置文件（content/、config.toml 等）。 部署仓库：使用另一个公开仓库（如 neo-dai/neo-dai.github.io），用于托管 public 生成的静态网页，这就是你 GitHub Pages 访问的网址。 GitHub Actions：在源码仓库（my-blog-source）配置自动化 CI/CD 工作流（.github/workflows/deploy.yml）。今后你只需要将 Markdown 推送到此仓库，其它步骤全自动完成。 二、详细步骤 1. 源码与部署仓库区分 my-blog-source（私有）：只存 Hugo 博客源码、markdown、主题和 config。 neo-dai.github.io（公开）：只存静态页面，供公开访问。 为什么这样设计？
-Hugo 主题、草稿、源文件等可以私密保存，博客源码独立于真正发布目录，也更易维护。
-2. 生成 SSH 部署密钥 自动部署需要 GitHub Actions 写入你的部署仓库。推荐在本地生成 SSH 部署密钥，并配置到仓库（详见下方说明）。
-本地或用脚本生成一对密钥： ssh-keygen -t rsa -b 4096 -C "hugo-deploy@github-actions" -f ~/.ssh/hugo_deploy_key **将公钥（.pub）**添加到 neo-dai.github.io 仓库的 Deploy Keys，并勾选 write。 将私钥内容配置到 my-blog-source 的 Secrets，名称如 ACTIONS_DEPLOY_KEY。 （密钥配置更详细操作可见文末附录。）'><meta itemprop=datePublished content="2025-11-09T17:45:35+08:00"><meta itemprop=dateModified content="2025-11-09T17:45:35+08:00"><meta itemprop=wordCount content="255"><meta name=twitter:card content="summary"><meta name=twitter:title content="使用GitHub Action 自动化部署blog"><meta name=twitter:description content='在日常写博客时，如果每次都需要本地执行 hugo 构建命令、进入 public 目录、再手动 git push，效率低且易出错。现代开发讲究 CI/CD（持续集成/持续部署），其实我们能完全自动化博客发布，让你专注写 Markdown，其余交给 GitHub Actions 实现自动部署。
-一、整体流程说明 自动化部署 Hugo 博客的基本流程如下：
-博客源码仓库：创建一个私有仓库（如 my-blog-source），存放你的 Markdown 博文和配置文件（content/、config.toml 等）。 部署仓库：使用另一个公开仓库（如 neo-dai/neo-dai.github.io），用于托管 public 生成的静态网页，这就是你 GitHub Pages 访问的网址。 GitHub Actions：在源码仓库（my-blog-source）配置自动化 CI/CD 工作流（.github/workflows/deploy.yml）。今后你只需要将 Markdown 推送到此仓库，其它步骤全自动完成。 二、详细步骤 1. 源码与部署仓库区分 my-blog-source（私有）：只存 Hugo 博客源码、markdown、主题和 config。 neo-dai.github.io（公开）：只存静态页面，供公开访问。 为什么这样设计？
-Hugo 主题、草稿、源文件等可以私密保存，博客源码独立于真正发布目录，也更易维护。
-2. 生成 SSH 部署密钥 自动部署需要 GitHub Actions 写入你的部署仓库。推荐在本地生成 SSH 部署密钥，并配置到仓库（详见下方说明）。
-本地或用脚本生成一对密钥： ssh-keygen -t rsa -b 4096 -C "hugo-deploy@github-actions" -f ~/.ssh/hugo_deploy_key **将公钥（.pub）**添加到 neo-dai.github.io 仓库的 Deploy Keys，并勾选 write。 将私钥内容配置到 my-blog-source 的 Secrets，名称如 ACTIONS_DEPLOY_KEY。 （密钥配置更详细操作可见文末附录。）'></head><body class="ma0 avenir bg-near-white production"><header><div class=bg-black><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l center items-center justify-between"><a href=/ class="f3 fw2 hover-white white-90 dib no-underline">myblog</a><div class="flex-l items-center"><ul class="pl0 mr3"><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white white-90 no-underline" href=/ title="首页 page">首页</a></li><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white white-90 no-underline" href=/posts/ title="文章 page">文章</a></li></ul><div class=ananke-socials></div></div></div></nav></div></header><main class=pb7 role=main><article class="flex-l mw8 center ph3 flex-wrap justify-between"><header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked ttu">Posts</aside><div id=sharing class="mt3 ananke-socials"></div><h1 class="f1 athelas mt3 mb1">使用GitHub Action 自动化部署blog</h1><p class=tracked><strong>neo</strong></p><time class="f6 mv4 dib tracked" datetime=2025-11-09T17:45:35+08:00>2025年11月9日</time>
-<span class="f6 mv4 dib tracked">- 2 minutes read </span><span class="f6 mv4 dib tracked">- 255 words</span></header><div class="nested-copy-line-height lh-copy serif f4 nested-links dark-gray pr4-l w-two-thirds-l"><p>在日常写博客时，如果每次都需要本地执行 <code>hugo</code> 构建命令、进入 public 目录、再手动 <code>git push</code>，效率低且易出错。现代开发讲究 CI/CD（持续集成/持续部署），其实我们能完全自动化博客发布，让你专注写 Markdown，其余交给 GitHub Actions 实现自动部署。</p><h2 id=一整体流程说明>一、整体流程说明</h2><p>自动化部署 Hugo 博客的基本流程如下：</p><ol><li><strong>博客源码仓库</strong>：创建一个私有仓库（如 <code>my-blog-source</code>），存放你的 Markdown 博文和配置文件（<code>content/</code>、<code>config.toml</code> 等）。</li><li><strong>部署仓库</strong>：使用另一个公开仓库（如 <code>neo-dai/neo-dai.github.io</code>），用于托管 <code>public</code> 生成的静态网页，这就是你 GitHub Pages 访问的网址。</li><li><strong>GitHub Actions</strong>：在源码仓库（<code>my-blog-source</code>）配置自动化 CI/CD 工作流（<code>.github/workflows/deploy.yml</code>）。今后你只需要将 Markdown 推送到此仓库，其它步骤全自动完成。</li></ol><h2 id=二详细步骤>二、详细步骤</h2><h3 id=1-源码与部署仓库区分>1. 源码与部署仓库区分</h3><ul><li><code>my-blog-source</code>（私有）：只存 Hugo 博客源码、markdown、主题和 config。</li><li><code>neo-dai.github.io</code>（公开）：只存静态页面，供公开访问。</li></ul><blockquote><p>为什么这样设计？<br>Hugo 主题、草稿、源文件等可以私密保存，博客源码独立于真正发布目录，也更易维护。</p></blockquote><h3 id=2-生成-ssh-部署密钥>2. 生成 SSH 部署密钥</h3><p>自动部署需要 GitHub Actions 写入你的部署仓库。推荐在本地生成 SSH 部署密钥，并配置到仓库（详见下方说明）。</p><ol><li>本地或用脚本生成一对密钥：<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>ssh-keygen -t rsa -b <span style=color:#ae81ff>4096</span> -C <span style=color:#e6db74>&#34;hugo-deploy@github-actions&#34;</span> -f ~/.ssh/hugo_deploy_key
+<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><title>使用GitHub Action 自动化部署blog | myblog</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content="在日常写博客时，如果每次都需要本地执行 hugo 构建命令、进入 public 目录、再手动 git push，效率低且易出错。现代开发讲究 CI/CD（持续集成/持续部署），其实我们能完全自动化博客发布，让你专注写 Markdown，其余交给 GitHub Actions 实现自动部署。
+前后流程对比
+在进入详细流程前，先来看博客部署的前后对比流程图：
+🕹️ 传统手动部署流程
+graph TD
+  A[写 Markdown] --> B[本地 hugo 构建]
+  B --> C[进入 public 目录]
+  C --> D[git add/commit/push 到 pages 仓库]
+  D --> E[博客发布上线]
+🚀 自动化部署（CI/CD）流程
+graph TD
+  A[写 Markdown] --> B[git push 到源码仓库]
+  B --> C[触发 GitHub Actions 自动构建]
+  C --> D[Actions 自动生成静态网页]
+  D --> E[Actions 自动推送到 pages 仓库]
+  E --> F[博客发布上线]
+可以看到，自动化部署后，你只需要写好 Markdown 并 git push，其它琐事全部交给自动流水线，极大提高效率和安全性。"><meta name=generator content="Hugo 0.152.2"><meta name=robots content="index, follow"><meta name=author content="neo"><link rel=stylesheet href=/ananke/css/main.min.efe4d852f731d5d1fbb87718387202a97aafd768cdcdaed0662bbe6982e91824.css><link rel=canonical href=https://neo-dai.github.io/posts/%E4%BD%BF%E7%94%A8github-action-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2blog/><meta property="og:url" content="https://neo-dai.github.io/posts/%E4%BD%BF%E7%94%A8github-action-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2blog/"><meta property="og:site_name" content="myblog"><meta property="og:title" content="使用GitHub Action 自动化部署blog"><meta property="og:description" content="在日常写博客时，如果每次都需要本地执行 hugo 构建命令、进入 public 目录、再手动 git push，效率低且易出错。现代开发讲究 CI/CD（持续集成/持续部署），其实我们能完全自动化博客发布，让你专注写 Markdown，其余交给 GitHub Actions 实现自动部署。
+前后流程对比 在进入详细流程前，先来看博客部署的前后对比流程图：
+🕹️ 传统手动部署流程 graph TD A[写 Markdown] --> B[本地 hugo 构建] B --> C[进入 public 目录] C --> D[git add/commit/push 到 pages 仓库] D --> E[博客发布上线] 🚀 自动化部署（CI/CD）流程 graph TD A[写 Markdown] --> B[git push 到源码仓库] B --> C[触发 GitHub Actions 自动构建] C --> D[Actions 自动生成静态网页] D --> E[Actions 自动推送到 pages 仓库] E --> F[博客发布上线] 可以看到，自动化部署后，你只需要写好 Markdown 并 git push，其它琐事全部交给自动流水线，极大提高效率和安全性。"><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-11-09T17:45:35+08:00"><meta property="article:modified_time" content="2025-11-09T17:45:35+08:00"><meta itemprop=name content="使用GitHub Action 自动化部署blog"><meta itemprop=description content="在日常写博客时，如果每次都需要本地执行 hugo 构建命令、进入 public 目录、再手动 git push，效率低且易出错。现代开发讲究 CI/CD（持续集成/持续部署），其实我们能完全自动化博客发布，让你专注写 Markdown，其余交给 GitHub Actions 实现自动部署。
+前后流程对比 在进入详细流程前，先来看博客部署的前后对比流程图：
+🕹️ 传统手动部署流程 graph TD A[写 Markdown] --> B[本地 hugo 构建] B --> C[进入 public 目录] C --> D[git add/commit/push 到 pages 仓库] D --> E[博客发布上线] 🚀 自动化部署（CI/CD）流程 graph TD A[写 Markdown] --> B[git push 到源码仓库] B --> C[触发 GitHub Actions 自动构建] C --> D[Actions 自动生成静态网页] D --> E[Actions 自动推送到 pages 仓库] E --> F[博客发布上线] 可以看到，自动化部署后，你只需要写好 Markdown 并 git push，其它琐事全部交给自动流水线，极大提高效率和安全性。"><meta itemprop=datePublished content="2025-11-09T17:45:35+08:00"><meta itemprop=dateModified content="2025-11-09T17:45:35+08:00"><meta itemprop=wordCount content="316"><meta name=twitter:card content="summary"><meta name=twitter:title content="使用GitHub Action 自动化部署blog"><meta name=twitter:description content="在日常写博客时，如果每次都需要本地执行 hugo 构建命令、进入 public 目录、再手动 git push，效率低且易出错。现代开发讲究 CI/CD（持续集成/持续部署），其实我们能完全自动化博客发布，让你专注写 Markdown，其余交给 GitHub Actions 实现自动部署。
+前后流程对比 在进入详细流程前，先来看博客部署的前后对比流程图：
+🕹️ 传统手动部署流程 graph TD A[写 Markdown] --> B[本地 hugo 构建] B --> C[进入 public 目录] C --> D[git add/commit/push 到 pages 仓库] D --> E[博客发布上线] 🚀 自动化部署（CI/CD）流程 graph TD A[写 Markdown] --> B[git push 到源码仓库] B --> C[触发 GitHub Actions 自动构建] C --> D[Actions 自动生成静态网页] D --> E[Actions 自动推送到 pages 仓库] E --> F[博客发布上线] 可以看到，自动化部署后，你只需要写好 Markdown 并 git push，其它琐事全部交给自动流水线，极大提高效率和安全性。"></head><body class="ma0 avenir bg-near-white production"><header><div class=bg-black><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l center items-center justify-between"><a href=/ class="f3 fw2 hover-white white-90 dib no-underline">myblog</a><div class="flex-l items-center"><ul class="pl0 mr3"><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white white-90 no-underline" href=/ title="首页 page">首页</a></li><li class="list f5 f4-ns fw4 dib pr3"><a class="hover-white white-90 no-underline" href=/posts/ title="文章 page">文章</a></li></ul><div class=ananke-socials></div></div></div></nav></div></header><main class=pb7 role=main><article class="flex-l mw8 center ph3 flex-wrap justify-between"><header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked ttu">Posts</aside><div id=sharing class="mt3 ananke-socials"></div><h1 class="f1 athelas mt3 mb1">使用GitHub Action 自动化部署blog</h1><p class=tracked><strong>neo</strong></p><time class="f6 mv4 dib tracked" datetime=2025-11-09T17:45:35+08:00>2025年11月9日</time>
+<span class="f6 mv4 dib tracked">- 2 minutes read </span><span class="f6 mv4 dib tracked">- 316 words</span></header><div class="nested-copy-line-height lh-copy serif f4 nested-links dark-gray pr4-l w-two-thirds-l"><p>在日常写博客时，如果每次都需要本地执行 <code>hugo</code> 构建命令、进入 public 目录、再手动 <code>git push</code>，效率低且易出错。现代开发讲究 CI/CD（持续集成/持续部署），其实我们能完全自动化博客发布，让你专注写 Markdown，其余交给 GitHub Actions 实现自动部署。</p><h2 id=前后流程对比>前后流程对比</h2><p>在进入详细流程前，先来看博客部署的前后对比流程图：</p><h3 id=-传统手动部署流程>🕹️ 传统手动部署流程</h3><pre tabindex=0><code class=language-mermaid data-lang=mermaid>graph TD
+  A[写 Markdown] --&gt; B[本地 hugo 构建]
+  B --&gt; C[进入 public 目录]
+  C --&gt; D[git add/commit/push 到 pages 仓库]
+  D --&gt; E[博客发布上线]
+</code></pre><h3 id=-自动化部署cicd流程>🚀 自动化部署（CI/CD）流程</h3><pre tabindex=0><code class=language-mermaid data-lang=mermaid>graph TD
+  A[写 Markdown] --&gt; B[git push 到源码仓库]
+  B --&gt; C[触发 GitHub Actions 自动构建]
+  C --&gt; D[Actions 自动生成静态网页]
+  D --&gt; E[Actions 自动推送到 pages 仓库]
+  E --&gt; F[博客发布上线]
+</code></pre><p>可以看到，自动化部署后，你只需要写好 Markdown 并 <code>git push</code>，其它琐事全部交给自动流水线，极大提高效率和安全性。</p><h2 id=一整体流程说明>一、整体流程说明</h2><p>自动化部署 Hugo 博客的基本流程如下：</p><ol><li><strong>博客源码仓库</strong>：创建一个私有仓库（如 <code>my-blog-source</code>），存放你的 Markdown 博文和配置文件（<code>content/</code>、<code>config.toml</code> 等）。</li><li><strong>部署仓库</strong>：使用另一个公开仓库（如 <code>neo-dai/neo-dai.github.io</code>），用于托管 <code>public</code> 生成的静态网页，这就是你 GitHub Pages 访问的网址。</li><li><strong>GitHub Actions</strong>：在源码仓库（<code>my-blog-source</code>）配置自动化 CI/CD 工作流（<code>.github/workflows/deploy.yml</code>）。今后你只需要将 Markdown 推送到此仓库，其它步骤全自动完成。</li></ol><h2 id=二详细步骤>二、详细步骤</h2><h3 id=1-源码与部署仓库区分>1. 源码与部署仓库区分</h3><ul><li><code>my-blog-source</code>（私有）：只存 Hugo 博客源码、markdown、主题和 config。</li><li><code>neo-dai.github.io</code>（公开）：只存静态页面，供公开访问。</li></ul><blockquote><p>为什么这样设计？<br>Hugo 主题、草稿、源文件等可以私密保存，博客源码独立于真正发布目录，也更易维护。</p></blockquote><h3 id=2-生成-ssh-部署密钥>2. 生成 SSH 部署密钥</h3><p>自动部署需要 GitHub Actions 写入你的部署仓库。推荐在本地生成 SSH 部署密钥，并配置到仓库（详见下方说明）。</p><ol><li>本地或用脚本生成一对密钥：<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>ssh-keygen -t rsa -b <span style=color:#ae81ff>4096</span> -C <span style=color:#e6db74>&#34;hugo-deploy@github-actions&#34;</span> -f ~/.ssh/hugo_deploy_key
 </span></span></code></pre></div></li><li>**将公钥（.pub）**添加到 <code>neo-dai.github.io</code> 仓库的 Deploy Keys，并勾选 write。</li><li><strong>将私钥</strong>内容配置到 <code>my-blog-source</code> 的 Secrets，名称如 <code>ACTIONS_DEPLOY_KEY</code>。</li></ol><blockquote><p>（密钥配置更详细操作可见文末附录。）</p></blockquote><h3 id=3-编写-github-actions-workflow>3. 编写 GitHub Actions workflow</h3><p>在 <code>my-blog-source/.github/workflows/</code> 下新建 <code>deploy.yml</code>：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yml data-lang=yml><span style=display:flex><span><span style=color:#f92672>name</span>: <span style=color:#ae81ff>Deploy Hugo Site to GitHub Pages</span>
 </span></span><span style=display:flex><span>
 </span></span><span style=display:flex><span><span style=color:#f92672>on</span>:
