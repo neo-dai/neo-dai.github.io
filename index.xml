@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>myblog</title><link>https://neo-dai.github.io/</link><description>Recent content on myblog</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 09 Nov 2025 17:45:35 +0800</lastBuildDate><atom:link href="https://neo-dai.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>使用GitHub Action 自动化部署blog</title><link>https://neo-dai.github.io/posts/%E4%BD%BF%E7%94%A8github-action-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2blog/</link><pubDate>Sun, 09 Nov 2025 17:45:35 +0800</pubDate><guid>https://neo-dai.github.io/posts/%E4%BD%BF%E7%94%A8github-action-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2blog/</guid><description>&lt;p&gt;在日常写博客时，如果每次都需要本地执行 &lt;code&gt;hugo&lt;/code&gt; 构建命令、进入 public 目录、再手动 &lt;code&gt;git push&lt;/code&gt;，效率低且易出错。现代开发讲究 CI/CD（持续集成/持续部署），其实我们能完全自动化博客发布，让你专注写 Markdown，其余交给 GitHub Actions 实现自动部署。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>myblog</title><link>https://neo-dai.github.io/</link><description>Recent content on myblog</description><generator>Hugo -- 0.152.2</generator><language>zh-CN</language><lastBuildDate>Sun, 09 Nov 2025 17:45:35 +0800</lastBuildDate><atom:link href="https://neo-dai.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>使用GitHub Action 自动化部署blog</title><link>https://neo-dai.github.io/posts/%E4%BA%8C%E4%BD%BF%E7%94%A8github-action-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2blog/</link><pubDate>Sun, 09 Nov 2025 17:45:35 +0800</pubDate><guid>https://neo-dai.github.io/posts/%E4%BA%8C%E4%BD%BF%E7%94%A8github-action-%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2blog/</guid><description>&lt;p&gt;在日常写博客时，如果每次都需要本地执行 &lt;code&gt;hugo&lt;/code&gt; 构建命令、进入 public 目录、再手动 &lt;code&gt;git push&lt;/code&gt;，效率低且易出错。现代开发讲究 CI/CD（持续集成/持续部署），其实我们能完全自动化博客发布，让你专注写 Markdown，其余交给 GitHub Actions 实现自动部署。&lt;/p&gt;
 &lt;h2 id="前后流程对比"&gt;前后流程对比&lt;/h2&gt;
 &lt;p&gt;在进入详细流程前，先来看博客部署的前后对比流程图：&lt;/p&gt;
 &lt;h3 id="-传统手动部署流程"&gt;🕹️ 传统手动部署流程&lt;/h3&gt;
-&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;graph TD
- A[写 Markdown] --&amp;gt; B[本地 hugo 构建]
- B --&amp;gt; C[进入 public 目录]
- C --&amp;gt; D[git add/commit/push 到 pages 仓库]
- D --&amp;gt; E[博客发布上线]
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="-自动化部署cicd流程"&gt;🚀 自动化部署（CI/CD）流程&lt;/h3&gt;
-&lt;pre tabindex="0"&gt;&lt;code class="language-mermaid" data-lang="mermaid"&gt;graph TD
- A[写 Markdown] --&amp;gt; B[git push 到源码仓库]
- B --&amp;gt; C[触发 GitHub Actions 自动构建]
- C --&amp;gt; D[Actions 自动生成静态网页]
- D --&amp;gt; E[Actions 自动推送到 pages 仓库]
- E --&amp;gt; F[博客发布上线]
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;可以看到，自动化部署后，你只需要写好 Markdown 并 &lt;code&gt;git push&lt;/code&gt;，其它琐事全部交给自动流水线，极大提高效率和安全性。&lt;/p&gt;</description></item><item><title>使用Hugo+GitHub Page快速搭建个人博客</title><link>https://neo-dai.github.io/posts/%E4%BD%BF%E7%94%A8hugo+github-page%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link><pubDate>Sun, 09 Nov 2025 17:22:55 +0800</pubDate><guid>https://neo-dai.github.io/posts/%E4%BD%BF%E7%94%A8hugo+github-page%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p&gt;在本教程中，你将学会如何利用 Hugo（一个高效的静态网站生成器）和 GitHub Pages 免费快速搭建属于你自己的个人博客。全流程覆盖从环境安装、写作、主题美化，到部署上线，适合对前端不熟悉、但愿意动手实践的你！&lt;/p&gt;
+&lt;div class="mermaid"&gt;graph TD
+A[写 Markdown] --&amp;gt; B[本地 hugo 构建]
+B --&amp;gt; C[进入 public 目录]
+C --&amp;gt; D[git add/commit/push 到 pages 仓库]
+D --&amp;gt; E[博客发布上线]&lt;/div&gt;
+&lt;h3 id="-自动化部署cicd流程"&gt;🚀 自动化部署（CI/CD）流程&lt;/h3&gt;
+&lt;div class="mermaid"&gt;graph TD
+A[写 Markdown] --&amp;gt; B[git push 到源码仓库]
+B --&amp;gt; C[触发 GitHub Actions 自动构建]
+C --&amp;gt; D[Actions 自动生成静态网页]
+D --&amp;gt; E[Actions 自动推送到 pages 仓库]
+E --&amp;gt; F[博客发布上线]&lt;/div&gt;
+&lt;p&gt;可以看到，自动化部署后，你只需要写好 Markdown 并 &lt;code&gt;git push&lt;/code&gt;，其它琐事全部交给自动流水线，极大提高效率和安全性。&lt;/p&gt;</description></item><item><title>使用Hugo+GitHub Page快速搭建个人博客</title><link>https://neo-dai.github.io/posts/%E4%B8%80%E4%BD%BF%E7%94%A8hugo+github-page%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link><pubDate>Sun, 09 Nov 2025 17:22:55 +0800</pubDate><guid>https://neo-dai.github.io/posts/%E4%B8%80%E4%BD%BF%E7%94%A8hugo+github-page%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid><description>&lt;p&gt;在本教程中，你将学会如何利用 Hugo（一个高效的静态网站生成器）和 GitHub Pages 免费快速搭建属于你自己的个人博客。全流程覆盖从环境安装、写作、主题美化，到部署上线，适合对前端不熟悉、但愿意动手实践的你！&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="为什么选择-hugo--github-pages"&gt;为什么选择 Hugo + GitHub Pages？&lt;/h2&gt;
 &lt;ul&gt;
@@ -39,8 +39,8 @@
 &lt;/ul&gt;
 &lt;h3 id="2-新建博客项目"&gt;2. 新建博客项目&lt;/h3&gt;
 &lt;p&gt;在任意文件夹下执行：&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo new site my-blog
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd my-blog
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;hugo new site my-blog
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; my-blog
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;结构简介：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;content/&lt;/code&gt;：所有文章（Markdown 格式）都放这里。&lt;/li&gt;
@@ -118,4 +118,53 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;数据落地&lt;/strong&gt;：玩家下线时，或每隔5分钟，将内存中的背包、坐标等数据存回数据库。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;MMO关联技能：&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>My First Post</title><link>https://neo-dai.github.io/posts/my-first-post/</link><pubDate>Sun, 09 Nov 2025 00:03:59 +0800</pubDate><guid>https://neo-dai.github.io/posts/my-first-post/</guid><description/></item></channel></rss>
+&lt;p&gt;&lt;strong&gt;MMO关联技能：&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>在Hugo中配置Mermaid图表支持</title><link>https://neo-dai.github.io/posts/%E4%B8%89%E5%9C%A8hugo%E4%B8%AD%E9%85%8D%E7%BD%AEmermaid%E5%9B%BE%E8%A1%A8%E6%94%AF%E6%8C%81/</link><pubDate>Mon, 27 Jan 2025 10:00:00 +0800</pubDate><guid>https://neo-dai.github.io/posts/%E4%B8%89%E5%9C%A8hugo%E4%B8%AD%E9%85%8D%E7%BD%AEmermaid%E5%9B%BE%E8%A1%A8%E6%94%AF%E6%8C%81/</guid><description>&lt;p&gt;Mermaid是一个强大的图表和流程图生成工具，可以通过简单的文本语法创建各种图表。在Hugo博客中集成Mermaid支持，可以让你在Markdown文章中直接绘制流程图、时序图、甘特图等，极大提升技术文档的可读性和专业性。&lt;/p&gt;
+&lt;h2 id="为什么选择mermaid"&gt;为什么选择Mermaid？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;纯文本语法&lt;/strong&gt;：使用Markdown类似的语法，无需图形界面工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;版本控制友好&lt;/strong&gt;：图表代码可以像代码一样进行版本管理&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多种图表类型&lt;/strong&gt;：支持流程图、时序图、甘特图、类图、状态图等&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;自动渲染&lt;/strong&gt;：在浏览器中自动渲染为SVG矢量图&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="配置流程概览"&gt;配置流程概览&lt;/h2&gt;
+&lt;p&gt;在Hugo中配置Mermaid支持的整体流程如下：&lt;/p&gt;
+&lt;div class="mermaid"&gt;graph TD
+A[开始配置] --&amp;gt; B[创建Render Hook]
+B --&amp;gt; C[添加Mermaid脚本]
+C --&amp;gt; D[配置Hugo Markup]
+D --&amp;gt; E[测试渲染]
+E --&amp;gt; F{渲染成功?}
+F --&amp;gt;|是| G[完成配置]
+F --&amp;gt;|否| H[排查问题]
+H --&amp;gt; D&lt;/div&gt;
+&lt;h2 id="详细配置步骤"&gt;详细配置步骤&lt;/h2&gt;
+&lt;h3 id="1-创建mermaid-render-hook"&gt;1. 创建Mermaid Render Hook&lt;/h3&gt;
+&lt;p&gt;Hugo使用Render Hook来自定义代码块的渲染方式。我们需要创建一个专门的hook来处理mermaid代码块。&lt;/p&gt;
+&lt;p&gt;在项目根目录下创建以下文件：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;文件路径&lt;/strong&gt;：&lt;code&gt;layouts/_default/_markup/render-codeblock-mermaid.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;文件内容&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt; &lt;span class="na"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;mermaid&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{- .Inner -}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这个文件的作用是：当Hugo遇到 &lt;code&gt;```mermaid&lt;/code&gt; 代码块时，会将其转换为 &lt;code&gt;&amp;lt;div class=&amp;quot;mermaid&amp;quot;&amp;gt;&lt;/code&gt; 元素，而不是普通的代码块。&lt;/p&gt;
+&lt;h3 id="2-添加mermaid-javascript支持"&gt;2. 添加Mermaid JavaScript支持&lt;/h3&gt;
+&lt;p&gt;接下来需要在页面中加载Mermaid的JavaScript库，并初始化渲染。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;文件路径&lt;/strong&gt;：&lt;code&gt;layouts/partials/extend_footer.html&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;文件内容&lt;/strong&gt;：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-html" data-lang="html"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{- /* Footer custom content area start */ -}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{- /* 添加Mermaid支持 */ -}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;script&lt;/span&gt; &lt;span class="na"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;script&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;script&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;// 初始化mermaid并渲染页面中的所有mermaid图表
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="nx"&gt;mermaid&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;initialize&lt;/span&gt;&lt;span class="p"&gt;({&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;startOnLoad&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;theme&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;default&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;securityLevel&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;loose&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;});&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="c1"&gt;// 确保所有mermaid元素都被渲染
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;querySelectorAll&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.mermaid&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;).&lt;/span&gt;&lt;span class="nx"&gt;length&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="nx"&gt;mermaid&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;run&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;script&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;{{- /* Footer custom content area end */ -}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：&lt;/p&gt;</description></item></channel></rss>
