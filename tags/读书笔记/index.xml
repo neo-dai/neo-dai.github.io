@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>读书笔记 on myblog</title><link>https://neo-dai.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link><description>Recent content in 读书笔记 on myblog</description><generator>Hugo -- 0.152.2</generator><language>zh-CN</language><lastBuildDate>Wed, 19 Nov 2025 15:55:47 +0800</lastBuildDate><atom:link href="https://neo-dai.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>AI 驱动的硬核阅读法：《Linux高性能服务器编程》读前指南</title><link>https://neo-dai.github.io/posts/linux%E9%AB%98%E6%80%A7%E8%83%BD%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%BC%96%E7%A8%8B%E9%98%85%E8%AF%BB%E5%89%8D/</link><pubDate>Wed, 19 Nov 2025 15:55:47 +0800</pubDate><guid>https://neo-dai.github.io/posts/linux%E9%AB%98%E6%80%A7%E8%83%BD%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%BC%96%E7%A8%8B%E9%98%85%E8%AF%BB%E5%89%8D/</guid><description>&lt;p&gt;今天广东降温了，早上一起来就看到昨晚谷歌宣布发布 &lt;strong&gt;Gemini 3&lt;/strong&gt;，性能吊打一众 LLM，前段时间刚发布的 Grok 4 马上被反超。技术迭代之快令人咋舌，但底层的基础知识依然是那座不动的大山。&lt;/p&gt;
+&lt;p&gt;在准备攻克游双老师的《Linux高性能服务器编程》这本书之前，我决定换个思路：&lt;strong&gt;在这个 AI 极度强大的时代，如何让 LLM 成为我的“陪练”和“导师”，而不是简单的搜索引擎？&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;遂准备了几个 Prompt 投喂给 Gemini 3 Pro，得到了一份令我惊讶的&lt;strong&gt;深度学习路线图&lt;/strong&gt;。这篇文章不是书评，而是一份“如何用 AI 辅助啃硬书”的实践记录。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="-第一步prompt-设计"&gt;🤖 第一步：Prompt 设计&lt;/h2&gt;
+&lt;p&gt;我没有直接问知识点，而是侧重于&lt;strong&gt;方法论&lt;/strong&gt;和&lt;strong&gt;学习路径&lt;/strong&gt;的咨询：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;角色设定与目标&lt;/strong&gt;：我正在阅读《Linux高性能服务器编程》，在这个过程中你可以帮到我什么？&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;方法论诊断&lt;/strong&gt;：我现在的阅读方式（先通读-&amp;gt;整理脉络-&amp;gt;运行代码-&amp;gt;背诵理论）是否存在问题？最佳实践是什么？&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;知识蒸馏&lt;/strong&gt;：将整本书的内容提炼精华，整理为可视化的思维导图。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id="-痛点诊断为什么传统的通读效率低"&gt;🚫 痛点诊断：为什么传统的“通读”效率低？&lt;/h2&gt;
+&lt;p&gt;AI 犀利地指出了我（以及大多数开发者）在学习系统编程时的误区：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;❌ “通读”带来的挫败感&lt;/strong&gt;：
+前几章 TCP/IP 协议极其枯燥。如果线性通读，大概率在第 4 章就会因为枯燥而放弃。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;修正&lt;/strong&gt;：除非基础极差，否则协议部分应&lt;strong&gt;查阅式阅读&lt;/strong&gt;，精力留给 API 和框架。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;❌ “运行代码”过于被动&lt;/strong&gt;：
+只是 &lt;code&gt;g++ compile&lt;/code&gt; 然后运行看没报错，这不叫掌握。你看不见数据在内核与用户态的流动。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;修正&lt;/strong&gt;：必须引入**可观测性（Observability）**工具。（tcpdump/Wireshark/strace/lsof/netstat）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;❌ “背诵记忆”是系统编程的大忌&lt;/strong&gt;：
+背诵 &amp;ldquo;TIME_WAIT 持续 2MSL&amp;rdquo; 毫无意义，过两周就忘。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;修正&lt;/strong&gt;：制造场景触发它，经历一次痛苦的 Debug，你将永生难忘。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="-最佳实践从读者进化为黑客"&gt;✅ 最佳实践：从“读者”进化为“黑客”&lt;/h2&gt;
+&lt;p&gt;Gemini 3 建议将学习流程升级为以下四个阶段，核心思想是**“看不见的一律不信”&lt;strong&gt;和&lt;/strong&gt;“破坏式实验”**。&lt;/p&gt;
+&lt;h3 id="1-验证式学习visualization"&gt;1. 验证式学习（Visualization）&lt;/h3&gt;
+&lt;p&gt;不要只看 &lt;code&gt;printf&lt;/code&gt;，要看内核行为。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;抓包&lt;/strong&gt;：用 &lt;code&gt;tcpdump -i lo port 12345 -X&lt;/code&gt;，亲眼看着 SYN/ACK 包飞过去。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;追踪&lt;/strong&gt;：用 &lt;code&gt;strace -p &amp;lt;pid&amp;gt;&lt;/code&gt; 跟踪进程，观察 &lt;code&gt;epoll_wait&lt;/code&gt; 是如何被系统触发的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-破坏式实验destruction"&gt;2. 破坏式实验（Destruction）&lt;/h3&gt;
+&lt;p&gt;理论不要背，要去复现问题（Bug）。&lt;/p&gt;</description></item></channel></rss>
