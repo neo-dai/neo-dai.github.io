@@ -1,4 +1,724 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>myblog</title><link>https://neo-dai.github.io/</link><description>Recent content on myblog</description><generator>Hugo -- 0.152.2</generator><language>zh-CN</language><lastBuildDate>Sat, 22 Nov 2025 15:44:01 +0800</lastBuildDate><atom:link href="https://neo-dai.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>MapReduce：大型集群上的简化数据处理(英译中)</title><link>https://neo-dai.github.io/posts/mapreduce%E4%B8%AD%E8%AF%91/</link><pubDate>Sat, 22 Nov 2025 15:44:01 +0800</pubDate><guid>https://neo-dai.github.io/posts/mapreduce%E4%B8%AD%E8%AF%91/</guid><description>&lt;p&gt;本文是 &lt;strong&gt;《MapReduce：Simplified Data Processing on Large Clusters》&lt;/strong&gt; 论文的中文翻译。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Notes</title><link>https://neo-dai.github.io/</link><description>Recent content on Notes</description><generator>Hugo -- 0.152.2</generator><language>zh-CN</language><lastBuildDate>Mon, 24 Nov 2025 20:19:18 +0800</lastBuildDate><atom:link href="https://neo-dai.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>健身动作库</title><link>https://neo-dai.github.io/posts/%E5%81%A5%E8%BA%AB/</link><pubDate>Mon, 24 Nov 2025 20:19:18 +0800</pubDate><guid>https://neo-dai.github.io/posts/%E5%81%A5%E8%BA%AB/</guid><description>&lt;h3 id="杠铃卧推"&gt;杠铃卧推&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 胸大肌（整体）、肱三头肌、三角肌前束&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;平躺于卧推凳，双脚踩实地面，肩胛骨后收下沉。&lt;/li&gt;
+&lt;li&gt;握距稍宽于肩，起杠后将杠铃悬停于肩部正上方。&lt;/li&gt;
+&lt;li&gt;吸气，控制速度下放杠铃至胸骨中部（乳头连线处），前臂垂直地面。&lt;/li&gt;
+&lt;li&gt;呼气，发力将杠铃推回起始位置。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;核心稳定&lt;/strong&gt;: 保持腹部收紧，不要过度弓腰。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;手腕中立&lt;/strong&gt;: 避免手腕过度后折，以免压迫腕关节。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="上斜哑铃卧推"&gt;上斜哑铃卧推&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 上胸肌、三角肌前束&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;调节椅背至30°-45°。&lt;/li&gt;
+&lt;li&gt;双手持哑铃举至肩上方，掌心朝前。&lt;/li&gt;
+&lt;li&gt;吸气慢放，感受上胸拉伸；呼气推起至手臂伸直（微屈）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;角度选择&lt;/strong&gt;: 角度过大（&amp;gt;60°）会变成推肩。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;前臂垂直&lt;/strong&gt;: 任何时候前臂都应垂直于地面。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="双杠臂屈伸"&gt;双杠臂屈伸&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 胸大肌下束（前倾）、肱三头肌（直立）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;双手握杠，身体悬空。&lt;/li&gt;
+&lt;li&gt;屈肘下放身体，直至大臂平行地面。&lt;/li&gt;
+&lt;li&gt;撑起身体还原。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;保护肩部&lt;/strong&gt;: 下放不要过深，以免拉伤肩关节。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;目标区分&lt;/strong&gt;: 身体前倾、手肘外展侧重练胸；身体直立、夹肘侧重练臂。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="哑铃过头臂屈伸"&gt;哑铃过头臂屈伸&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 肱三头肌（长头）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;坐姿或站姿，双手托住哑铃一端举过头顶。&lt;/li&gt;
+&lt;li&gt;大臂夹紧头部两侧，屈肘将哑铃下放至颈后。&lt;/li&gt;
+&lt;li&gt;伸直手臂还原。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;大臂固定&lt;/strong&gt;: 全程大臂尽量不动，不要向外打开。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;腰椎保护&lt;/strong&gt;: 核心收紧，避免肋骨外翻和塌腰。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="绳索臂屈伸"&gt;绳索臂屈伸&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 肱三头肌（侧重外侧头、内侧头）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;站立，双脚与肩同宽，身体微前倾。&lt;/li&gt;
+&lt;li&gt;大臂夹紧身体两侧固定。&lt;/li&gt;
+&lt;li&gt;呼气，伸直手臂向下压，直至手臂完全伸直。&lt;/li&gt;
+&lt;li&gt;吸气，缓慢还原至小臂平行地面。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;只动小臂&lt;/strong&gt;: 避免大臂前后晃动借力。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;顶峰收缩&lt;/strong&gt;: 动作底部手腕外旋（若用绳索），挤压三头肌。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="平板蝴蝶收腹"&gt;平板蝴蝶收腹&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 腹直肌&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;平躺，脚掌相对（呈蝴蝶状），膝盖向外打开。&lt;/li&gt;
+&lt;li&gt;双手置于头后或胸前。&lt;/li&gt;
+&lt;li&gt;呼气卷起上背部，吸气还原。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;消除借力&lt;/strong&gt;: 蝴蝶腿姿势可减少髂腰肌借力，更孤立腹肌。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不要抱头&lt;/strong&gt;: 避免双手用力拉拽颈部。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="卷腹"&gt;卷腹&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 腹直肌上部&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;平躺，屈膝，双脚踩地。&lt;/li&gt;
+&lt;li&gt;呼气，依靠腹肌收缩将肩胛骨拉离地面。&lt;/li&gt;
+&lt;li&gt;吸气，缓慢下放。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;幅度控制&lt;/strong&gt;: 不需要坐起，只需卷起上背部。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;颈部放松&lt;/strong&gt;: 下巴微收，视线看向膝盖方向。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="坐姿划船"&gt;坐姿划船&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 背阔肌、中下斜方肌、菱形肌&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;坐于器械上，脚踩踏板，膝盖微屈。&lt;/li&gt;
+&lt;li&gt;保持背部挺直，将把手拉向腹部。&lt;/li&gt;
+&lt;li&gt;感受背部肌群夹紧，缓慢还原。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;先肩后手&lt;/strong&gt;: 启动时先做肩胛后缩，再屈肘拉动。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;避免晃动&lt;/strong&gt;: 躯干保持稳定，不要过度后仰借力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="杠铃划船"&gt;杠铃划船&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 背阔肌（厚度）、大圆肌、三角肌后束&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;俯身，背部挺直与地面呈45°或更低。&lt;/li&gt;
+&lt;li&gt;双手正手或反手握杠。&lt;/li&gt;
+&lt;li&gt;将杠铃沿大腿拉向腹部位置。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;腰背挺直&lt;/strong&gt;: 严禁弓腰，防止腰椎受伤。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;手肘贴身&lt;/strong&gt;: 拉起时手肘尽量贴近身体。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="窄距下拉"&gt;窄距下拉&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 背阔肌下部&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;坐于下拉器械，使用V柄或窄握。&lt;/li&gt;
+&lt;li&gt;挺胸，将把手拉至上胸部。&lt;/li&gt;
+&lt;li&gt;控制回放速度。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;挺胸沉肩&lt;/strong&gt;: 全程保持挺胸，下拉时肩膀下沉。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;挤压背部&lt;/strong&gt;: 动作底部用力挤压背阔肌。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="哑铃划船"&gt;哑铃划船&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 单侧背阔肌&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;单手单膝支撑于长凳，背部平直。&lt;/li&gt;
+&lt;li&gt;另一手持哑铃，自然下垂。&lt;/li&gt;
+&lt;li&gt;呼气，将哑铃拉向髋部方向。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;划弧线&lt;/strong&gt;: 哑铃运动轨迹是向后上方的弧线，而不是直上直下。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;躯干稳定&lt;/strong&gt;: 避免身体随动作扭转。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="哑铃弯举"&gt;哑铃弯举&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 肱二头肌&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;站立或坐姿，掌心向前。&lt;/li&gt;
+&lt;li&gt;大臂固定，屈肘将哑铃举起。&lt;/li&gt;
+&lt;li&gt;顶峰收缩后缓慢下放。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;避免摇晃&lt;/strong&gt;: 不要利用身体惯性甩起哑铃。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;离心控制&lt;/strong&gt;: 下放过程要慢，抗阻力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="锤式弯举"&gt;锤式弯举&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 肱肌、肱二头肌外侧、肱桡肌&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;掌心相对（对握）。&lt;/li&gt;
+&lt;li&gt;保持掌心相对姿势，屈肘举起哑铃。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;手腕锁定&lt;/strong&gt;: 手腕保持中立，不要弯曲。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;增加厚度&lt;/strong&gt;: 此动作对增加手臂正面视觉宽度很有效。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="集中弯举"&gt;集中弯举&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 肱二头肌（肌峰）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;坐姿，双腿分开，持铃手的大臂后侧抵住同侧大腿内侧。&lt;/li&gt;
+&lt;li&gt;孤立发力弯举哑铃。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;完全孤立&lt;/strong&gt;: 借助大腿固定大臂，彻底消除借力。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;顶峰挤压&lt;/strong&gt;: 在最高点停顿1-2秒。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="深蹲"&gt;深蹲&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 股四头肌、臀大肌、核心&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;杠铃置于斜方肌上，双脚略宽于肩。&lt;/li&gt;
+&lt;li&gt;屈髋屈膝下蹲，膝盖方向与脚尖一致。&lt;/li&gt;
+&lt;li&gt;蹲至大腿平行地面或更低，发力站起。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;膝盖指向&lt;/strong&gt;: 严禁膝盖内扣。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;背部挺直&lt;/strong&gt;: 保持脊柱中立，不要通过弯腰来达到下蹲深度。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="坐姿腿屈伸"&gt;坐姿腿屈伸&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 股四头肌（刻画线条）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;调整器械，使膝关节对准转轴。&lt;/li&gt;
+&lt;li&gt;呼气，股四头肌发力将小腿踢直。&lt;/li&gt;
+&lt;li&gt;吸气缓慢还原。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;勾脚尖&lt;/strong&gt;: 动作过程中保持勾脚尖可增加肌肉收缩感。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不要锁死&lt;/strong&gt;: 膝盖伸直时保留微屈，保护关节。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="腿举"&gt;腿举&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 股四头肌、臀大肌（取决于脚位）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;坐入器械，背部紧贴靠背。&lt;/li&gt;
+&lt;li&gt;双脚蹬板，解锁保险。&lt;/li&gt;
+&lt;li&gt;屈膝下放至大小腿呈90°，蹬起。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;臀部贴紧&lt;/strong&gt;: 蹬起时臀部不要离开座垫。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;膝盖微屈&lt;/strong&gt;: 顶部不要完全锁死膝盖。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="站姿杠铃推举"&gt;站姿杠铃推举&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 三角肌前束、中束，核心&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;杠铃置于上胸，双手略宽于肩。&lt;/li&gt;
+&lt;li&gt;收紧臀腹，将杠铃垂直推举过头顶。&lt;/li&gt;
+&lt;li&gt;头部在杠铃过额头后略微前探。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;核心收紧&lt;/strong&gt;: 避免过度后仰变成上斜卧推。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;轨迹垂直&lt;/strong&gt;: 杠铃运动轨迹应垂直于地面。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="哑铃推肩"&gt;哑铃推肩&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 三角肌前束、中束&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;坐姿，双手持铃举至双耳旁。&lt;/li&gt;
+&lt;li&gt;呼气推举至头顶，哑铃互不触碰。&lt;/li&gt;
+&lt;li&gt;吸气下放至大臂平行地面或略低。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;手肘朝前&lt;/strong&gt;: 手肘略微朝前，不要完全向两侧打开（保护肩关节）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;行程完整&lt;/strong&gt;: 下放要充分，不要只做半程。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="侧平举"&gt;侧平举&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 三角肌中束（肩宽关键）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;站立微前倾，双手持铃垂于身前。&lt;/li&gt;
+&lt;li&gt;肘部微屈，以肩为轴将哑铃向两侧举起。&lt;/li&gt;
+&lt;li&gt;举至大臂与地面平行即可。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;倒水姿势&lt;/strong&gt;: 想象像倒水一样，小拇指略高于大拇指（内旋），但需注意肩峰撞击风险，新手可保持平举。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;手肘引导&lt;/strong&gt;: 是手肘带动小臂和哑铃，而不是手腕用力挑起。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="俯身飞鸟"&gt;俯身飞鸟&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 三角肌后束&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;俯身至躯干接近平行地面。&lt;/li&gt;
+&lt;li&gt;像大鹏展翅一样将哑铃向两侧后方举起。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;不要夹背&lt;/strong&gt;: 主要是肩后束发力，过度夹背会练到斜方肌。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;控制惯性&lt;/strong&gt;: 避免利用身体起伏甩动哑铃。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="坐姿髋外展"&gt;坐姿髋外展&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 臀中肌、臀小肌&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;坐于器械，大腿外侧贴挡板。&lt;/li&gt;
+&lt;li&gt;用臀部力量将双腿向外打开。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;躯干位置&lt;/strong&gt;: 身体前倾可更多刺激臀大肌上部，后靠更多刺激臀中肌。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="坐姿髋内收"&gt;坐姿髋内收&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 大腿内收肌群&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;坐于器械，大腿内侧贴挡板。&lt;/li&gt;
+&lt;li&gt;用大腿内侧力量将双腿向内夹紧。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;控制回放&lt;/strong&gt;: 离心阶段要控制速度，不要让配重片猛烈撞击。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="哑铃卧推"&gt;哑铃卧推&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 胸大肌（特别是中缝和整体厚度）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;平躺，双手持铃，掌心朝前。&lt;/li&gt;
+&lt;li&gt;下放至胸部两侧，感受拉伸。&lt;/li&gt;
+&lt;li&gt;推起至顶点，哑铃靠拢但不触碰。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;活动范围&lt;/strong&gt;: 相比杠铃，哑铃下放更深，拉伸感更强。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;顶部挤压&lt;/strong&gt;: 推起时想象二头肌去触碰胸肌。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="上斜哑铃飞鸟"&gt;上斜哑铃飞鸟&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 上胸肌（中缝）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;上斜凳，掌心相对。&lt;/li&gt;
+&lt;li&gt;手臂微屈固定，像抱大树一样向两侧打开。&lt;/li&gt;
+&lt;li&gt;胸肌发力将哑铃抱回上方。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;肘部角度&lt;/strong&gt;: 全程保持肘部微屈固定，不要变伸缩手臂（变成卧推）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;拉伸感&lt;/strong&gt;: 底部充分拉伸，但不要过度以免伤肩。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="器械推胸"&gt;器械推胸&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 胸大肌&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;调整座椅高度，使握把位于中胸高度。&lt;/li&gt;
+&lt;li&gt;挺胸，推起握把。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;安全稳定&lt;/strong&gt;: 适合新手寻找胸肌发力感，且较安全。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;肩部固定&lt;/strong&gt;: 即使推到最远端，肩膀也要贴在椅背上，不要送肩。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="哑铃臂屈伸-仰卧"&gt;哑铃臂屈伸 (仰卧)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 肱三头肌&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;平躺，双手持铃举起，掌心相对。&lt;/li&gt;
+&lt;li&gt;屈肘将哑铃下放至耳侧或额头上方。&lt;/li&gt;
+&lt;li&gt;伸直手臂还原。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;大臂角度&lt;/strong&gt;: 大臂可微向后倾斜，保持三头肌持续张力。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;肘部收紧&lt;/strong&gt;: 避免肘部过度外张。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="绳索弯举"&gt;绳索弯举&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 肱二头肌&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;龙门架低位滑轮，双手握杆。&lt;/li&gt;
+&lt;li&gt;站立弯举。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;持续张力&lt;/strong&gt;: 绳索的特点是全程都有张力，顶峰收缩效果好。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="上斜哑铃弯举"&gt;上斜哑铃弯举&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 肱二头肌（长头）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;躺在上斜凳（45°-60°）上。&lt;/li&gt;
+&lt;li&gt;手臂自然下垂，进行弯举。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;拉伸长头&lt;/strong&gt;: 利用身后位置充分拉伸二头肌长头。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;肘部稳定&lt;/strong&gt;: 肘部需始终指向地面，不要前移。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="牧师凳锤式弯举"&gt;牧师凳锤式弯举&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 肱肌、肱桡肌&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;腋下卡住牧师凳边缘。&lt;/li&gt;
+&lt;li&gt;竖握哑铃（锤式）进行弯举。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;无法借力&lt;/strong&gt;: 此动作完全孤立，重量选轻一点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="哑铃箭步蹲"&gt;哑铃箭步蹲&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 股四头肌、臀大肌&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;双手持铃垂于体侧。&lt;/li&gt;
+&lt;li&gt;向前迈一大步下蹲，前后腿均呈90°。&lt;/li&gt;
+&lt;li&gt;前腿发力蹬回。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;重心控制&lt;/strong&gt;: 躯干直立侧重股四，前倾侧重臀部。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;膝盖保护&lt;/strong&gt;: 前脚膝盖不要过度超过脚尖，后腿膝盖不触地。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="硬拉-传统"&gt;硬拉 (传统)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 后链肌群（背部、臀部、腘绳肌）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;杠铃贴小腿，双脚与髋同宽。&lt;/li&gt;
+&lt;li&gt;屈髋屈膝握杆，背部挺直收紧。&lt;/li&gt;
+&lt;li&gt;脚后跟蹬地，髋膝同时伸展将杠铃拉起。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;启动&lt;/strong&gt;: 想象是用脚蹬离地面，而不是用手拉起杠铃。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;脊柱中立&lt;/strong&gt;: 全程严禁龟背（弓腰）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="哑铃直腿硬拉-rdl"&gt;哑铃直腿硬拉 (RDL)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 腘绳肌（大腿后侧）、臀大肌&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;微屈膝固定（并非完全直腿）。&lt;/li&gt;
+&lt;li&gt;屈髋（屁股向后撅），哑铃沿腿部前侧下放。&lt;/li&gt;
+&lt;li&gt;感受大腿后侧拉伸，臀部发力顶髋回正。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;屈髋主导&lt;/strong&gt;: 动作是屁股前后动，不是上下蹲。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;杠铃贴腿&lt;/strong&gt;: 哑铃/杠铃始终贴着腿上下，减少腰部压力。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="阿诺德推肩"&gt;阿诺德推肩&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 三角肌前、中束&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;起始位掌心朝向面部。&lt;/li&gt;
+&lt;li&gt;外展肩部的同时旋转手腕推起。&lt;/li&gt;
+&lt;li&gt;终点位掌心朝前。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;流畅旋转&lt;/strong&gt;: 推举与旋转同步进行。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;行程更长&lt;/strong&gt;: 相比普通推肩刺激范围更广，但重量不宜过大。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="半俯身侧平举"&gt;半俯身侧平举&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 三角肌侧后方&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;一手抓固定物，身体略微倾斜。&lt;/li&gt;
+&lt;li&gt;另一手持铃向侧上方举起。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;解决借力&lt;/strong&gt;: 倾斜身体改变了阻力力矩，能更好刺激三角肌中束起始阶段。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="蝴蝶机反向飞鸟"&gt;蝴蝶机反向飞鸟&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;目标肌群&lt;/strong&gt;: 三角肌后束&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动作流程&lt;/strong&gt;:
+&lt;ol&gt;
+&lt;li&gt;面向蝴蝶机坐，双手反向握把。&lt;/li&gt;
+&lt;li&gt;向后打开双臂，直至与背部成一直线。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;核心点/易错点&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;不要缩颈&lt;/strong&gt;: 保持沉肩，避免斜方肌代偿。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;手肘微屈&lt;/strong&gt;: 手臂不要完全伸直锁死。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Golang基础语法</title><link>https://neo-dai.github.io/posts/go%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</link><pubDate>Mon, 24 Nov 2025 16:03:07 +0800</pubDate><guid>https://neo-dai.github.io/posts/go%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/</guid><description>&lt;p&gt;&lt;img loading="lazy" src="https://neo-dai.github.io/images/DockerGopher.png"&gt;&lt;/p&gt;
+&lt;p&gt;本文将简要介绍 Go (Golang) 语言的基础语法和核心概念，适合有一定编程基础但刚接触 Go 的读者。通过具体示例，您可以快速了解 Go 的基本结构、数据类型、函数用法以及常用的编码习惯，有助于后续深入学习和项目实践。&lt;/p&gt;
+&lt;h3 id="package--import"&gt;package &amp;amp; import&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;每个程序都是由包构成，main本身也是一个package&lt;/li&gt;
+&lt;li&gt;可以通过import导入其他包来使用&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;package&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;math/rand&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;我最喜欢的数字是 &amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;rand&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Intn&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;rand.Intn(20)&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="导出名exported"&gt;导出名（Exported）&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;package 中 首字母大写的字段可以给其他包直接访问，反之则不行&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;package&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;infrastructure&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="c1"&gt;// Datacenter 结构体是导出的 (public)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;type&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;Datacenter&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;struct&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// serverCount 首字母小写，是未导出的 (private)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// 只有 infrastructure 包内部的代码能访问它&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;serverCount&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="c1"&gt;// AddServer 首字母大写，是导出的 (public)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;d&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nx"&gt;Datacenter&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;AddServer&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;d&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;serverCount&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="函数"&gt;函数&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;基础函数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;add&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="2"&gt;
+&lt;li&gt;简写1&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;add&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="3"&gt;
+&lt;li&gt;多返回值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;swap&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="4"&gt;
+&lt;li&gt;带名字的返回值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;split&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;sum&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;sum&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;9&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;y&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;sum&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;x&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="5"&gt;
+&lt;li&gt;结构体函数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;// AddServer 首字母大写，是导出的 (public)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;d&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="nx"&gt;Datacenter&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;AddServer&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;d&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;serverCount&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="变量"&gt;变量&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;变量声明： &lt;code&gt;var a int&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;变量始化：
+&lt;ul&gt;
+&lt;li&gt;默认 &lt;code&gt;var i,j int = 1,2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;自动推导类型 &lt;code&gt;var i,j = 1,2&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;短变量声明（只能在函数内使用）&lt;code&gt;i,j:=1,2&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;没有初始化的变量会设置为对应类型的默认值&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;package&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;c&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;python&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;java&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;bool&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// 默认声明&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;j&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// 自动推导类型&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;k&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;m&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// 短变量声明&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;m&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;o&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;:=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;c&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;python&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;java&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;i&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;j&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;l&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;m&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="nx"&gt;o&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="基本类型"&gt;基本类型&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kt"&gt;bool&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;string&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int8&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int16&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int32&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;int64&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;uint&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;uint8&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;uint16&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;uint32&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;uint64&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;uintptr&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kt"&gt;byte&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// uint8别名&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kt"&gt;rune&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="c1"&gt;// int32别名 标识 Unicode 码位&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kt"&gt;float32&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;float64&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kt"&gt;complex64&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;complex128&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class="highlight"&gt;&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-go" data-lang="go"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kn"&gt;package&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;main&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;fmt&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s"&gt;&amp;#34;math/cmplx&amp;#34;&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;var&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;ToBe&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;bool&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;MaxInt&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;uint64&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="mi"&gt;64&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;z&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="kt"&gt;complex128&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;cmplx&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Sqrt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;12i&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="kd"&gt;func&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;类型：%T 值：%v\n&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;ToBe&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;ToBe&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;类型：%T 值：%v\n&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;MaxInt&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;MaxInt&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;fmt&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nf"&gt;Printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#34;类型：%T 值：%v\n&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;z&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nx"&gt;z&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="w"&gt;&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="w"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="类型转换"&gt;类型转换&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;T(v) // 将变量v转为类型T&lt;/code&gt;
+&lt;code&gt;fmt.Println(&amp;quot;%T&amp;quot;,v) // 类型推导&lt;/code&gt;
+&lt;code&gt;const Pi = 3.14 // 常量&lt;/code&gt;&lt;/p&gt;</description></item><item><title>MapReduce：大型集群上的简化数据处理(英译中)</title><link>https://neo-dai.github.io/posts/mapreduce%E4%B8%AD%E8%AF%91/</link><pubDate>Sat, 22 Nov 2025 15:44:01 +0800</pubDate><guid>https://neo-dai.github.io/posts/mapreduce%E4%B8%AD%E8%AF%91/</guid><description>&lt;p&gt;本文是 &lt;strong&gt;《MapReduce：Simplified Data Processing on Large Clusters》&lt;/strong&gt; 论文的中文翻译。&lt;/p&gt;
 &lt;p&gt;该论文是分布式系统领域的里程碑式工作，提出了 MapReduce 编程模型，极大地简化了大规模数据处理任务的开发难度。MapReduce 与 GFS（Google File System）和 Bigtable 并称为“Google三驾马车”，成为支撑 Google 大规模数据处理和存储的核心基础设施之一。无论你是刚入门分布式系统开发，还是希望深入理解现代大数据处理的核心思想，深入阅读和理解此文都具有重要的学习价值。&lt;/p&gt;
 &lt;p&gt;特别需要注意的是，这篇论文也是 &lt;strong&gt;MIT 6.824&lt;/strong&gt; 第一讲（Lecture 1: Introduction）的核心阅读材料之一，对于打好分布式系统理论与工程实践的基础极为关键。&lt;/p&gt;
 &lt;p&gt;【&lt;em&gt;免责声明&lt;/em&gt;】&lt;br&gt;
