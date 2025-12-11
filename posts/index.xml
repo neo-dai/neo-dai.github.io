@@ -42,13 +42,13 @@
 &lt;h3 id="三-复杂度分析"&gt;三、 复杂度分析&lt;/h3&gt;
 &lt;h4 id="排序法"&gt;排序法&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;时间复杂度&lt;/strong&gt;: $O(n*klogk)$， n是数组长度 k是字符串长度&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;空间复杂度&lt;/strong&gt;: $O(n*k)$，存储 n 个字符串作为 value，最多 n 个 key（每个 key 长度为 k）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;时间复杂度&lt;/strong&gt;: $O(n \times k \log k)$，n 是数组长度，k 是字符串长度&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;空间复杂度&lt;/strong&gt;: $O(n \times k)$，存储 n 个字符串作为 value，最多 n 个 key（每个 key 长度为 k）&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id="计数法"&gt;计数法&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;时间复杂度&lt;/strong&gt;：$O(n*k)$&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;空间复杂度&lt;/strong&gt;： $O(n*k)$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;时间复杂度&lt;/strong&gt;：$O(n \times k)$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;空间复杂度&lt;/strong&gt;：$O(n \times k)$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id="四代码实现"&gt;四、代码实现&lt;/h3&gt;
 &lt;ol&gt;
